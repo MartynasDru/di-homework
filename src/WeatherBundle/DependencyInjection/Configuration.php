@@ -19,7 +19,7 @@ class Configuration implements ConfigurationInterface
         $rootNode
                 ->children()
                     ->scalarNode('provider')
-                        ->defaultValue('delegating')
+                        ->isRequired()
                     ->end()
                     ->arrayNode('providers')
                         ->children()
